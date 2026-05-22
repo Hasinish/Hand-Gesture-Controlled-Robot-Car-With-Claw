@@ -108,8 +108,8 @@ The system utilizes a custom, compact lightweight ASCII-encoded serial protocol 
 
 ## 📂 File Architecture
 
-* [glove.txt](file:///c:/Users/hasin/Desktop/Hand%20Gesture%20Controlled%20Robot%20Car/glove.txt) : C++ Source code for the Wearable Glove Controller. Includes I2C MPU-6050 reading, button debouncing, dynamic speed calculation, and HC-05 packet broadcasting.
-* [car.txt](file:///c:/Users/hasin/Desktop/Hand%20Gesture%20Controlled%20Robot%20Car/car.txt) : C++ Source code for the Robot Car. Manages serial packet parsing, L298N logic, servo positioning, ultrasonic polling, status LEDs, and the safety watchdog timer.
+* [glove.cpp](file:///c:/Users/hasin/Desktop/Hand%20Gesture%20Controlled%20Robot%20Car/glove.cpp) : C++ Source code for the Wearable Glove Controller. Includes I2C MPU-6050 reading, button debouncing, dynamic speed calculation, and HC-05 packet broadcasting.
+* [car.cpp](file:///c:/Users/hasin/Desktop/Hand%20Gesture%20Controlled%20Robot%20Car/car.cpp) : C++ Source code for the Robot Car. Manages serial packet parsing, L298N logic, servo positioning, ultrasonic polling, status LEDs, and the safety watchdog timer.
 
 ---
 
