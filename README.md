@@ -34,8 +34,6 @@ graph TD
         H -->|Status Outputs| O[Yellow LED: Obstacle Warning]
     end
 
-    style GloveTransmitter fill:#f9f,stroke:#333,stroke-width:2px
-    style ReceiverRobotCar fill:#bbf,stroke:#333,stroke-width:2px
     style F fill:#ff9,stroke:#333,stroke-width:1px
     style G fill:#ff9,stroke:#333,stroke-width:1px
 ```
