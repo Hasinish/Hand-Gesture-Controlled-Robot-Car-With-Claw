@@ -11,7 +11,7 @@ The glove reads tilt data from an **MPU-6050 IMU** (Pitch & Roll) to translate h
 ```mermaid
 graph TD
     %% Transmitter Glove %%
-    subgraph Glove Transmitter
+    subgraph GloveTransmitter ["Glove Transmitter"]
         A[MPU-6050 IMU] -->|I2C: SDA/SCL| B[Arduino Uno/Nano]
         C[D4: Movement Toggle Button] --> B
         D[D5: Claw Open Button] --> B
@@ -23,7 +23,7 @@ graph TD
     F -.->|Wireless 2.4GHz RF| G[HC-05 Bluetooth RX]
 
     %% Receiver Car %%
-    subgraph Receiver Robot Car
+    subgraph ReceiverRobotCar ["Receiver Robot Car"]
         G -->|SoftwareSerial| H[Arduino Uno/Nano]
         H -->|PWM Control| I[L298N Motor Driver]
         I -->|Bi-directional control| J[4WD/2WD Motors]
@@ -34,8 +34,8 @@ graph TD
         H -->|Status Outputs| O[Yellow LED: Obstacle Warning]
     end
 
-    style Glove Transmitter fill:#f9f,stroke:#333,stroke-width:2px
-    style Receiver Robot Car fill:#bbf,stroke:#333,stroke-width:2px
+    style GloveTransmitter fill:#f9f,stroke:#333,stroke-width:2px
+    style ReceiverRobotCar fill:#bbf,stroke:#333,stroke-width:2px
     style F fill:#ff9,stroke:#333,stroke-width:1px
     style G fill:#ff9,stroke:#333,stroke-width:1px
 ```
